@@ -418,12 +418,14 @@ and will go on and on and on and on and...
 
 ### Glob patterns
 
-If we want to print the content of all 9 files,
+```@raw html
+<p>If we want to print the content of all 9 files,
 we could type them all out,
 but that would get tedious.
 There are many useful shortcuts in programming
-(programmers ~~are lazy~~ like efficiency),
-one of which is [`glob`](https://en.wikipedia.org/wiki/Glob_%28programming%29) patterns.
+(programmers <del>are lazy</del> like efficiency),
+one of which is <a href=https://en.wikipedia.org/wiki/Glob_%28programming%29>glob</a> patterns.</p>
+```
 
 The most common `glob` is `*`,
 which stands for any number of characters,
