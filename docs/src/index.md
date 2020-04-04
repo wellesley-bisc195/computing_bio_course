@@ -1,6 +1,12 @@
-# Essential Skills for Computational Biology
+```@meta
+CurrentModule = BISC195
+```
 
-```@contents
-Pages = ["index.md", "Syllabus.md", "Lesson1/index.md"]
-Depth = 2
+# BISC195
+
+```@index
+```
+
+```@autodocs
+Modules = [BISC195]
 ```

@@ -84,8 +84,6 @@ $ pwd
 If you're using a Mac,
 this probably displayed something like `/Users/yourname`.
 
-You
-
 !!! tip
     Whenever you see code blocks in these lessons that start with `$ `,
     this is a hint that it is a shell command.
@@ -101,9 +99,10 @@ You
     and once the command has finished executing,
     you will see a new prompt.
 
-    These code blocks will often be followed by a block
+    **NOTE:** These code blocks will often be followed by a block
     that does **not** start with a `$`.
-    This is the expected output.
+    This is the expected output;
+    you shouldn't try to copy-past this into your terminal.
 
 Let's take a look around.
 the `ls` command is used to `l`i`s`t
@@ -120,6 +119,26 @@ Desktop  Downloads     Public  repos
 Your output will likely look a bit different from mine,
 but you'll probably see `Documents` and `Desktop`,
 as well as other directories you may recognize.
+
+!!! note "Windows Users"
+    You may not see any output.
+    This is because the default Ubuntu installation on Windows
+    doesn't have any directories or files in the home folder.
+    But we can actually trick the shell
+    into using the Windows home folder instead.
+    In the following command,
+    replace `<yourname>` with your Windows username.
+
+    ```sh
+    $ export HOME=/mnt/c/Users/<yourname>
+    $ cd ~
+    $ pwd
+    /mnt/c/Users/<yourname>
+    ```
+
+    Now, enter `ls` again,
+    and you should see the contents of your Windows home folder.
+
 
 The `ls` command can also take a directory
 as an "[^argument]."
@@ -138,11 +157,6 @@ but (assuming you store anything on your Desktop),
 you should see a list of files and directories.
 If your `Desktop` is pristine, congratulations!
 You won't see any output.
-
-!!! note "Windows Users"
-    A reminder that this `Desktop` is your linux `Desktop`.
-    To see your Windows Desktop,
-    use `/mnt/c/Users/yourname/Desktop` instead.
 
 The filesystem is organized hierarchically -
 At the very top of the hierarchy is the **[^root]**,

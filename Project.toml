@@ -1,10 +1,15 @@
-name = "ComputationalBiologyCourse"
-uuid = "b466c462-5a1c-40b1-8eaa-0f4a2ec00db7"
-keywords = ["biology", "bioinformatics", ]
-license = "MIT"
+name = "BISC195"
+uuid = "330f54e6-ee29-40e7-8c38-a258ddbc4e5e"
+authors = ["Kevin Bonham <kevbonham@gmail.com>"]
+version = "0.1.0"
 desc = "Functions and documentation for 'Essental Skills for Computational Biology' course"
-authors = ["kescobo <kevbonham@gmail.com>"]
-version = "0.0.1"
+licence = "MIT"
 
-[deps]
-DataDeps = "124859b0-ceae-595e-8997-d05f6a7a8dfe"
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]

@@ -1,7 +1,6 @@
-using ComputationalBiologyCourse, Test
+using BISC195
+using Test
 
-@test 1==1
-
-@testset "Builders" begin
-    @test 1==1
+@testset "BISC195.jl" begin
+    # Write your tests here.
 end
